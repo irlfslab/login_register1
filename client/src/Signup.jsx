@@ -32,9 +32,9 @@ function Signup() {
                         autoComplete="off"
                         name="name"
                         className="form-control rounded-0"
-                        onchange = {(e) => setName(e.target.value)}
+                        onChange = {(e) => setName(e.target.value)}
                         />
-                        <div class="invalid-feedback">
+                        <div className="invalid-feedback">
                             Please enter your name
                         </div>
                     </div>
@@ -50,7 +50,7 @@ function Signup() {
                           className="form-control rounded-0"
                           onchange = {(e) => setEmail(e.target.value)}
                         />
-                        <div class="invalid-feedback">
+                        <div className="invalid-feedback">
                             Please enter your email
                         </div>
                     </div>
@@ -65,7 +65,7 @@ function Signup() {
                            className="form-control rounded-0"
                            onchange = {(e) => setPassword(e.target.value)}
                         />
-                        <div class="invalid-feedback">
+                        <div className="invalid-feedback">
                             Please enter your password
                         </div>
                     </div>
