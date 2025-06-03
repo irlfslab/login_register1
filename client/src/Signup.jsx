@@ -48,7 +48,7 @@ function Signup() {
                           autoComplete="off"
                           name="email"
                           className="form-control rounded-0"
-                          onchange = {(e) => setEmail(e.target.value)}
+                          onChange = {(e) => setEmail(e.target.value)}
                         />
                         <div className="invalid-feedback">
                             Please enter your email
@@ -63,7 +63,7 @@ function Signup() {
                            placeholder="Enter Password"
                            name="password"
                            className="form-control rounded-0"
-                           onchange = {(e) => setPassword(e.target.value)}
+                           onChange = {(e) => setPassword(e.target.value)}
                         />
                         <div className="invalid-feedback">
                             Please enter your password

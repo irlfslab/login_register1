@@ -25,22 +25,6 @@ function Login() {
                 <h2>Login</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
-                        <label htmlFor="name">
-                            <strong>Name</strong>
-                        </label>
-                        <input
-                        type="text"
-                        placeholder="Enter Name"
-                        autoComplete="off"
-                        name="name"
-                        className="form-control rounded-0"
-                        onchange = {(e) => setName(e.target.value)}
-                        />
-                        <div class="invalid-feedback">
-                            Please enter your name
-                        </div>
-                    </div>
-                    <div className="mb-3">
                         <label htmlFor="email">
                             <strong>Email</strong>
                         </label>
@@ -50,9 +34,9 @@ function Login() {
                           autoComplete="off"
                           name="email"
                           className="form-control rounded-0"
-                          onchange = {(e) => setEmail(e.target.value)}
+                          onChange = {(e) => setEmail(e.target.value)}
                         />
-                        <div class="invalid-feedback">
+                        <div className="invalid-feedback">
                             Please enter your email
                         </div>
                     </div>
@@ -65,9 +49,9 @@ function Login() {
                            placeholder="Enter Password"
                            name="password"
                            className="form-control rounded-0"
-                           onchange = {(e) => setPassword(e.target.value)}
+                           onChange = {(e) => setPassword(e.target.value)}
                         />
-                        <div class="invalid-feedback">
+                        <div className="invalid-feedback">
                             Please enter your password
                         </div>
                     </div>
